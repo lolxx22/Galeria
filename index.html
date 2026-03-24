@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Para ti 💗</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ========== SECCIÓN DE FOTOS ========== -->
+  <section class="gallery-section" id="gallery">
+
+    <div class="hero-header">
+      <p class="subtitle-top">✨ Una pequeña parte de  </p>
+      <h1 class="main-title"> Nuestra <span class="heart-inline">💗</span></h1>
+      <p class="subtitle-bottom"> Hermosa historia de amor </p>
+    </div>
+
+    <div class="photo-grid">
+
+      <!-- BLOQUE 1 — 4 fotos -->
+      <div class="photo-card card-1">
+        <img src="/imagenes/img1.webp" alt="Foto 1" />
+        <div class="photo-overlay">te amo con todo 💗</div>
+      </div>
+      <div class="photo-card card-2">
+        <img src="/imagenes/img2.webp" alt="Foto 2" />
+        <div class="photo-overlay">mi todo eres tú</div>
+      </div>
+      <div class="photo-card card-3">
+        <img src="/imagenes/img3.webp" alt="Foto 3" />
+        <div class="photo-overlay">el amor de mi vida</div>
+      </div>
+      <div class="photo-card card-4">
+        <img src="/imagenes/img4.webp" alt="Foto 4" />
+        <div class="photo-overlay">mi princesa hermosa 🌹</div>
+      </div>
+
+      <!-- BLOQUE 2 — 6 fotos -->
+      <div class="photo-card card-5">
+        <img src="/imagenes/img5.webp" alt="Foto 5" />
+        <div class="photo-overlay">para siempre contigo</div>
+      </div>
+      <div class="photo-card card-6">
+        <img src="/imagenes/img6.jpg" alt="Foto 6" />
+        <div class="photo-overlay">eres mi felicidad ✨</div>
+      </div>
+      <div class="photo-card card-7">
+        <img src="/imagenes/img7.jpg" alt="Foto 7" />
+        <div class="photo-overlay">te amo más cada día</div>
+      </div>
+      <div class="photo-card card-8">
+        <img src="/imagenes/img8.jpg" alt="Foto 8" />
+        <div class="photo-overlay">mi mujer bonita 💕</div>
+      </div>
+      <div class="photo-card card-9">
+        <img src="/imagenes/img9.jpg" alt="Foto 9" />
+        <div class="photo-overlay">nunca te soltaré</div>
+      </div>
+      <div class="photo-card card-10">
+        <img src="/imagenes/img10.jpg" alt="Foto 10" />
+        <div class="photo-overlay">mi corazón es tuyo</div>
+      </div>
+
+      <!-- BLOQUE 3 — 4 fotos -->
+      <div class="photo-card card-11">
+        <img src="/imagenes/img11.jpg" alt="Foto 11" />
+        <div class="photo-overlay">eres mi mundo entero 🌎</div>
+      </div>
+      <div class="photo-card card-12">
+        <img src="/imagenes/img12.jpg" alt="Foto 12" />
+        <div class="photo-overlay">quiero casarme contigo 💍</div>
+      </div>
+      <div class="photo-card card-13">
+        <img src="/imagenes/img13.jpg" alt="Foto 13" />
+        <div class="photo-overlay">te amaré por siempre</div>
+      </div>
+      <div class="photo-card card-14">
+        <img src="/imagenes/img14.jpg" alt="Foto 14" />
+        <div class="photo-overlay">mi razón de sonreír 😊</div>
+      </div>
+
+      <!-- BLOQUE 4 — 6 fotos -->
+      <div class="photo-card card-15">
+        <img src="/imagenes/img15.jpg" alt="Foto 15" />
+        <div class="photo-overlay">mi vida eres tú</div>
+      </div>
+      <div class="photo-card card-16">
+        <img src="/imagenes/img16.jpg" alt="Foto 16" />
+        <div class="photo-overlay">te amo mi amor 💗</div>
+      </div>
+      <div class="photo-card card-17">
+        <img src="/imagenes/img17.jpg" alt="Foto 17" />
+        <div class="photo-overlay">tú y yo para siempre</div>
+      </div>
+      <div class="photo-card card-18">
+        <img src="/imagenes/img18.jpg" alt="Foto 18" />
+        <div class="photo-overlay">mi cielo eres tú ☁️</div>
+      </div>
+      <div class="photo-card card-19">
+        <img src="/imagenes/img19.jpg" alt="Foto 19" />
+        <div class="photo-overlay">mi amor eterno 🌹</div>
+      </div>
+      <div class="photo-card card-20">
+        <img src="/imagenes/img20.jpg" alt="Foto 20" />
+        <div class="photo-overlay">eres todo lo que quiero 💗</div>
+      </div>
+        <audio id="musicaGaleria" loop>
+            <source src="/musica/music1.mp3" type="audio/mpeg">
+        </audio>
+ 
+    </div>
+
+    <!-- BOTÓN PARA ABRIR LA CARTA -->
+    <div class="cta-wrapper">
+      <p class="pre-button-text">Oye... tengo algo que decirte 🫣</p>
+      <button class="open-letter-btn" id="openLetterBtn">
+        <span class="btn-emoji">💌</span>
+        <span class="btn-text">No abras esto</span>
+        <span class="btn-hint">(abre esto)</span>
+      </button>
+      <p class="post-button-text">...te juro que no muerde 👀</p>
+    </div>
+
+  </section>
+
+  <!-- ========== OVERLAY DE LA CARTA ========== -->
+  <div class="letter-overlay" id="letterOverlay">
+    <div class="letter-container" id="letterContainer">
+
+      <button class="close-btn" id="closeBtn">✕</button>
+
+      <div class="letter-header">
+        <div class="wax-seal">💗</div>
+        <p class="letter-from">Una carta para ti,</p>
+        <h2 class="letter-title">Mi amor 🌹</h2>
+        <div class="letter-divider"><span>— ❦ —</span></div>
+      </div>
+
+      <div class="letter-body">
+
+        <p>
+          Llevamos 16 meses juntos, donde he sido el hombre más pero <em>más</em> feliz del planeta.
+          Sé que hemos tenido muchos bajones donde no nos hemos entendido, muchas discusiones
+          entre muchas cosas más... sé que solucionándonos podemos llegar a comprender muchas
+          cosas como pareja para que esas cosas no pasen más.
+        </p>
+
+        <p>
+          Solo decirte que en estos 16 meses, sé que eres el amor de mi vida — la mujer con la
+          que me quiero casar, tener un hogar, tenerte todos los días a mi lado. Porque sé que
+          eres una gran mujer, una mujer que en todo momento haces que me enamore más de ti,
+          porque tu amor es tan único. Me lo demuestras siempre, lo haces porque a pesar de los
+          malos y buenos momentos, siempre estamos ahí, en todo momento. Amo mucho estar a
+          tu lado. 💗
+        </p>
+
+        <p>
+          De verdad tengo esa ilusión de que Dios nos dará un buen trabajo, una buena estabilidad
+          para irnos juntos a vivir. Créeme que será todo un sueño donde dormiremos juntos,
+          cocinaremos juntos, reíremos y bailaremos en nuestra casa, y muchas cosas más.
+          Aunque sé que yo no soy perfecto, todas mis imperfecciones quiero cambiarlas a tu lado,
+          como una de ellas que me ayudaste a cambiar — te agradezco tanto.
+        </p>
+
+        <p>
+          Gracias por cada día hacerme despertar pensando en tu linda sonrisa, porque es lo que
+          de verdad hace que cada día que pase a tu lado me enamore más y más de ti. Amo esa
+          sonrisa — ver a mi novia, o como te dije, mi mujer sonreír, créeme que es un sentimiento
+          tan único que lo provocas tú. Y sí, hablemos de eso: tú me provocas en todos los sentidos
+          que puede haber en una persona, porque tú eres ese algo que nunca me puede faltar para
+          tener un lindo día.
+        </p>
+
+        <p>
+          Amo de verdad, pero de verdad que estés a mi lado. Además, como siempre te digo:
+          <strong>te amo, te amoooo</strong>, porque es un amor único. Tú llegaste a mi vida para
+          hacerme el hombre más feliz. Mi bonita, mi princesa, mi todo — mi todo. Daría el
+          corazón por ti, daría todo. Siempre voy a cuidarte. Siempre vas a tener mi pecho para
+          que en todo momento te acuestes. Hasta cuando veas que algo te pasa y quisieras llorar,
+          ahí estaré. Además siempre cuentas con toda mi confianza.
+        </p>
+
+        <p>
+          Eres el amor que siempre soñé. Me haces muy feliz. Sé que hace mucho tiempo no te
+          escribía, pero con mucho amor lo hago. Quiero todo — <em>casémonos ya, no aguanto
+          esperar más</em> 😂 — mentira, todo a su tiempo. Sé que Dios nos cuidará en todo
+          momento hasta que yo te vea entrar con un vestido blanco largo... aww, qué lindo, yo
+          escribiendo esto ya me emociono 🥹 jajaja.
+        </p>
+
+        <p>
+          Te amo, amor. De verdad amo cada mañana, tarde y noche: estás en mi cabeza... en las dos
+          🫣 un poquito de coqueteo. Te amo de verdad, te extraño un montón. Amo cada cosa de ti.
+          Amooo — hasta tenemos relaciones, tooodo. De verdad te amo con todo mi corazón.
+          Sé el amor de mi vida para siempre, porque de verdad me doy cuenta que contigo quiero
+          todo.
+        </p>
+
+        <p>
+          Y escribiendo esto te quiero decir: puedo estar siempre a tu lado. Déjame ser ese hombre
+          hasta decir <em>"la muerte nos separe"</em>. Todo mi amor te amo con todo mi corazón.
+          <strong>Te amo. Te amo. 💗💗💗💗</strong>
+        </p>
+
+        <div class="letter-divider"><span>— ❦ —</span></div>
+
+        <p>
+          Porque esta es una historia de amor tan bella, de verdad. Tú eres mi novia, mi novia
+          bonita, mi consentida, mi amor, mi amor entero. Porque siempre te voy a consentir
+          en todo, hasta donde me alcance 😂 — pero de verdad siempre: las flores, los peluches,
+          los besos, la comida... muchas cosas más. Mi amor, siempre te lo daré, porque con eso
+          te veo sonreír y eso me pone nervioso por dentro. Eso es mi debilidad, un pequeño
+          secreto: <strong>tú me vuelves loco, loco de amor</strong>. A veces, para qué mentir,
+          sacas canas, pero te amo con todo eso, mi amor.
+        </p>
+
+        <p>
+          De verdad amo todo momento a tu lado. Créeme hay tantas anécdotas que las tengo
+          guardadas en todo momento en mi mente, corazón... todo mi amor. Te amo de verdad,
+          amor. Todo de ti siempre me lo recuerdo — todos esos momentos tan bellos que hay
+          muchos que siempre quisiera repetir mil veces. Ejemplo: ir al cine — créeme que
+          amo estar ahí viendo películas, estar momentos 🥵 (tú entiendes jajaja). Pero otro más,
+          tan íntimo contigo, es cuando vamos a comer, así sea algo sencillo, o cuando nos
+          reunimos y tenemos platita y nos damos ese gusto — créeme que es hermoso. O cuando
+          estamos en la casita... tú y yo sabemos que eso también amo 😏 Amo ese cuerpo tuyo,
+          amo todo de ti.
+        </p>
+
+        <p>
+          De verdad amo tu sonrisa, tú eres tú. Siempre quiero que en todo momento me agarres
+          la mano y nos digamos lo mucho que nos amamos. Porque te amo de verdad, amo todo
+          de ti. <strong>Te amo, mi princesa, con todo mi corazón. Te amo y sabes que mi corazón
+          es todo tuyo. Te amo. Te amo. Mi amor. 💗💗</strong>
+        </p>
+
+        <div class="letter-signature">
+          <p>Con todo mi amor,</p>
+          <p class="signature-name">Tu amor 💗</p>
+        </div>
+
+        <!-- BOTÓN VOLVER A LAS FOTOS -->
+        <div class="back-wrapper">
+          <button class="back-btn" id="backToGalleryBtn">
+            <span class="back-arrow">←</span>
+            <span class="back-text">volver a nuestras fotos</span>
+            <span>💗</span>
+          </button>
+        </div>
+        <audio id="musicaCarta" loop>
+            <source src="/musica/music2.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
